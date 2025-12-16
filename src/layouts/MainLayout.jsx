@@ -5,7 +5,7 @@ import Footer from "./main_component/Footer";
 
 export default function MainLayout() {
   return (
-    <div>
+    <div className="flex flex-col gap-28">
       <Navbar />
       <Outlet />
       <Footer />
