@@ -6,6 +6,8 @@ import { FaImage } from "react-icons/fa";
 import { MdShield } from "react-icons/md";
 import PlanPricing from "../../../layouts/main_component/PlanPricing";
 import Blog from "../../../layouts/main_component/Blog";
+import SectionCardLeft from "./_components/SectionCardLeft";
+import SectionCardRight from "./_components/SectionCardRight";
 
 const HomePage = () => {
   const pms = [
@@ -93,8 +95,46 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* ----- section cards ----- */}
+      <div className="flex flex-col gap-24 w-full px-4 md:px-6 lg:px-12 xl:px-24">
+        <div>
+          <p className="text-sm md:text-[16px] font-semibold text-[#007BFF]">
+            What can Do With This System?
+          </p>
+          <h3 className="text-2xl md:text-3xl lg:text-[40px] font-semibold text-[#333333]">
+            All task Done Digitally
+          </h3>
+        </div>
+
+        <SectionCardLeft />
+
+        <SectionCardRight
+          badge={"Declutter Patient Data"}
+          title={"Manage Patient Records"}
+          description={
+            "Automated payment tracking and reconciliation across all facilities. Instantly generate invoices, monitor pending payments, and maintain complete financial records—eliminating manual bookkeeping and ensuring billing accuracy."
+          }
+        />
+
+        <SectionCardLeft
+          badge={"Centralize Patient Media"}
+          title={"Manage Payments"}
+          description={
+            "Automated payment tracking and reconciliation across all facilities. Instantly generate invoices, monitor pending payments, and maintain complete financial records—eliminating manual bookkeeping and ensuring billing accuracy."
+          }
+        />
+
+        <SectionCardRight
+          badge={"Simplify Laboratory Documentation"}
+          title={"Analysis Repots"}
+          description={
+            "Real-time analytics dashboard tracking patient volume, revenue trends, and facility performance. Generate custom reports, identify patterns, and make data-driven decisions to optimize practice efficiency and profitability."
+          }
+        />
+      </div>
+
       {/* ---- IMS ---- */}
-      <div className="flex flex-col px-4 md:px-6 lg:px-12 xl:px-24 gap-y-5 md:gap-y-10 lg:gap-y-14 font-inter">
+      <div className="flex flex-col px-4 w-full md:px-6 lg:px-12 xl:px-24 gap-y-5 md:gap-y-10 lg:gap-y-14 font-inter">
         <div>
           <p className="text-sm md:text-[16px] font-semibold text-[#007BFF]">
             Why Pruthatek’s Institute Management System?
