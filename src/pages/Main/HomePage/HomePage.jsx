@@ -4,6 +4,8 @@ import { BsChatLeftDotsFill } from "react-icons/bs";
 import { HiDocumentText } from "react-icons/hi2";
 import { FaImage } from "react-icons/fa";
 import { MdShield } from "react-icons/md";
+import PlanPricing from "../../../layouts/main_component/PlanPricing";
+import Blog from "../../../layouts/main_component/Blog";
 
 const HomePage = () => {
   const pms = [
@@ -41,6 +43,42 @@ const HomePage = () => {
 
   return (
     <div className="flex flex-col items-center gap-28">
+      {/* ---- title ---- */}
+      <div className="font-inter w-full max-w-6xl mx-auto text-center flex flex-col items-center gap-y-6 md:px-6 px-4 ">
+        <p className="text-[#007BFF] font-medium text-sm md:text-[16px]">
+          Smart Multi-Hospital Management Platform for Doctors
+        </p>
+        <h3 className="text-3xl md:text-[40px] xl:text-[50px] font-black text-[#282D30] md:leading:[45px] lg:leading-[60px]">
+          Fully Integrated Multi-Appointment Management Solution for Doctors
+        </h3>
+        <p className="text-sm md:text-[16px] text-[#7C7C7C] leading-[32px] w-full lg:w-[95%]  xl:w-[90%]">
+          Our unified practice management platform streamlines multi-hospital
+          scheduling, automates payment reconciliation, and delivers real-time
+          analytics—reducing administrative complexity, maximizing time
+          efficiency, and enabling a modern, data-driven approach to healthcare
+          practice management for Doctors.
+        </p>
+
+        <button className="text-white bg-[#007BFF] text-sm md:text-[16px] font-bold rounded-full py-3 px-14 cursor-pointer">
+          Book A Demo
+        </button>
+      </div>
+
+      {/* ---- home image ---- */}
+      <div className="font-inter flex flex-col items-center gap-y-14 px-4 md:px-24 w-full max-w-[1300px]">
+        <h3 className="text-2xl md:text-3xl xl:text-[40px] font-semibold text-[#282828]">
+          Robust Multi-Appointment Management System For Doctors
+        </h3>
+
+        <div className="shadow-[0_4px_34px_0_rgba(120,120,120,0.25)] rounded-[20px] overflow-hidden">
+          <img
+            src="/home.png"
+            alt="home_image"
+            className="w-full max-w-[950px] object-contain"
+          />
+        </div>
+      </div>
+
       {/* ---- review ---- */}
       <div className="flex flex-col px-4 md:px-6 lg:px-12 xl:px-24 w-full gap-y-14 font-inter">
         <div>
@@ -88,6 +126,8 @@ const HomePage = () => {
         </div>
       </div>
 
+      <PlanPricing hide={true} />
+
       {/* Review 2  */}
       <div className="flex flex-col px-4 md:px-6 lg:px-12 xl:px-24 w-full gap-y-14 font-inter">
         <div>
@@ -105,6 +145,8 @@ const HomePage = () => {
           <ReviewCard bg={"#FB8C5C"} />
         </div>
       </div>
+
+      <Blog />
     </div>
   );
 };
