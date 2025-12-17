@@ -84,7 +84,7 @@ const Resource = () => {
                           ${
                             active === item.id
                               ? "text-white"
-                              : "text-black group-hover:text-[#008060]"
+                              : "text-black group-hover:text-[#2C87F2]"
                           }
                         `}
                   >
